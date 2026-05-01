@@ -34,6 +34,10 @@ Cross-path alerts, travel timeline, matching
 
 **Strengths and Weaknesses:**
 GDPR/APP compliance, bad actors
+This app helps travellers connect with a travel buddy that met while travelling at another country.
+*but*
+Storing and sharing real-time location history is heavily regulated. Legal review is required before launch.
+Also, if a user met someone who turned out to be unsafe, they do not want that person receiving their location alert.
 
 **Target Audience:**
 Solo travellers, backpackers
@@ -50,6 +54,9 @@ AI ID scan, health diagnostics, reminders
 
 **Strengths and Weaknesses:**
 False positives, lighting/camera quality
+This strength of this app - Most people have killed at least one plant simply because they didn't know what it needed and the lack of accessible guidance at the right moment.
+*But*
+AI could give false positive health diagnosis.A yellowing leaf could mean five different things. A wrong diagnosis leads to the wrong treatment. Also, Users often photograph plants in dark corners. Poor image quality leads to misidentification. 
 
 **Target Audience:**
 Plant owners, gift recipients
@@ -59,13 +66,17 @@ Plant owners, gift recipients
 ---
 
 **Problem it solves/Purpose:**
-Apartment hunters open dozens of tabs checking crime stats, violations, utilities, transit, 311 complaints across scattered government sites. Impossible to remember and compare multiple addresses before signing a lease.    This tool collapses all of that into one address search. Type in a rental address and get a single report pulling from 20+ government data sources, with red flag alerts for anything that should make you think twice before signing a lease.
+Apartment hunters open dozens of tabs checking crime stats, violations, utilities, transit, 311 complaints across scattered government sites. Impossible to remember and compare multiple addresses before signing a lease. This tool collapses all of that into one address search. Type in a rental address and get a single report pulling from 20+ government data sources, with red flag alerts for anything that should make you think twice before signing a lease.
 
 **Key Features:**
 Gov API aggregation, red flag alerts, compare
 
 **Strengths and Weaknesses:**
 No unified AU database, defamation risk
+The user can get all the right information about a place in one place rather than going through different sources
+*but*
+Data is held separately by each state, council, and federal agency. 20+ sources means 20+ formats and update schedules.
+Labelling a specific address as high-risk requires every flag to cite its source, date, and a disclaimer that it reflects records at a point in time
 
 **Target Audience:**
 Renters, interstate movers
