@@ -59,6 +59,7 @@ Plant owners, gift recipients
 ---
 
 **Problem it solves/Purpose:**
+Apartment hunters open dozens of tabs checking crime stats, violations, utilities, transit, 311 complaints across scattered government sites. Impossible to remember and compare multiple addresses before signing a lease.    This tool collapses all of that into one address search. Type in a rental address and get a single report pulling from 20+ government data sources, with red flag alerts for anything that should make you think twice before signing a lease.
 
 **Key Features:**
 Gov API aggregation, red flag alerts, compare
@@ -117,4 +118,11 @@ Background tracking reliability: Mobile OS (iOS/Android) may restrict background
 **Target Audience:**
 Parents, women, kids
 
-## **Why did we pick the fitness app?**
+## **So what are we doing and why?**
+We are making a fitness app utilising Mediapipe. This app will focus on gameifying the act of working out, as some people find it hard to find the motivation to work out. How we will achieve this is by providing a library of games with mediapipe compatability to track the movements of your excersises to interact directly with the game(s). Users will create a profile which will track statistics such as XP, daily streaks and stats in regards to workout progress.
+
+The goal of this web-application is to help people who find it hard to find motivation to go to the gym or keep fit. This can also be applied to those that have any form of neuro-divergency which rely more heavily on instant gratification to find motivation. The idea is that the outcome of this project will help retain a decent routine for keeping people more active.
+
+Expanding on the features as stated previously; we will be implementing Mediapipe as our main driving force and this is what will be allowing you to interact directly with the game(s). Mediapipe is an AI-driven tracking software which maps your limbs using camera-detection to track your movements in a way which directly speaks to the code and by extension, any game we create/add to the web-app. To help keep your motivation and your progress on track, we will also be implementing an account system which tracks XP/Levels you get from playing the games, on top of daily streaks (similar to Duolingo) which will help boost your daily retention. Things that might be added later include: badges, achievements, co-op play with friends, leaderboards, etc. We're hoping that this creates an engaging environment where you want to keep playing. The app can be accessed by any machine with an internet connection and access to a camera (as a camera is essential for mediapipe to work of course).
+
+For legal reasons, we'll be implementing only a small amount of games (as legally-distinct as possible) purely for the purposes of showcasing the technology behind our idea and how it can potentially be used in the future. We're hoping that by using this approach we can focus more on the implication of what positive impact an application like this can achieve, more than the actual games themselves; as typically with an app like this there would be updates and new games added to the 'library' over the course of the apps' lifespan.
