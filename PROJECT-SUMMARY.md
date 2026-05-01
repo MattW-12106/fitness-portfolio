@@ -78,13 +78,13 @@ Renters, interstate movers
 AI Grocery Assistant is a new, idea aimed at families and budget shoppers, seeking to help users manage grocery shopping efficiently
 
 **Key Features:**
-Inventory tracking, smart lists, price compare
+Inventory tracking, smart lists, price comparison
 
 **Strengths and Weaknesses:**
-No Woolies/Coles/Aldi APIs in AU
+It was clear that australians waste significant food and money on unused pantry products and combining both inventory tracking and shopping list. However, we found some limitations within the API available in Australia for the main grocery markets to track prices. The data entry being manual was a big issue as well as there is no way to track the pantry otherwise. 
 
 **Target Audience:**
-Families, budget shoppers
+low-budget Families, budget shoppers, students
 
 ---
 ### **Purchasing Scam Detector**
