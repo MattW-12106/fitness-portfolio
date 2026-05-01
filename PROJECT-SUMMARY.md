@@ -1,7 +1,11 @@
 # **Fitness App Using Mediapipe - Holberton Portfolio Group Project**
 
 This is the basic outline of our group portfolio project (yay!).
-Before we begin let's have a look at some of the other ideas considered for the portfolio project:
+Before we begin let's have a look at some of the other ideas considered for the portfolio project.
+
+## **Brief Overview Of Team Formation And Process followed**
+This team was created with our love for games. This is a remote team, so our idea way to connect and have virtual coffee meetup is through Discord games which gave us good insight of our portfolio project. 
+
 
 ## **Other Ideas | The Good, The Bad, The Ugly**
 
