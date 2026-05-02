@@ -30,7 +30,7 @@ information and receive alerts.
 **Key Features:** SOS alert, GPS sharing, police upload
 
 **Strengths:** Useful in situations where users cannot call emergency
-services.\
+services.
 **Weaknesses:** Privacy law concerns and permission issues with GPS
 tracking.
 
@@ -44,7 +44,7 @@ tracking.
 
 **Key Features:** Cross-path alerts, travel timeline, matching
 
-**Strengths:** Helps travellers connect and stay safe.\
+**Strengths:** Helps travellers connect and stay safe.
 **Weaknesses:** Real-time location sharing raises legal and safety
 concerns.
 
@@ -58,7 +58,7 @@ concerns.
 
 **Key Features:** AI ID scan, health diagnostics, reminders
 
-**Strengths:** Solves common plant care knowledge gaps.\
+**Strengths:** Solves common plant care knowledge gaps.
 **Weaknesses:** Risk of incorrect diagnosis due to poor image quality.
 
 **Target Audience:** Plant owners, gift recipients
@@ -72,7 +72,7 @@ decisions.
 
 **Key Features:** Gov API aggregation, red flag alerts, comparison
 
-**Strengths:** Centralizes scattered information.\
+**Strengths:** Centralizes scattered information.
 **Weaknesses:** Data inconsistency and legal risks (defamation, outdated
 data).
 
@@ -86,7 +86,7 @@ data).
 
 **Key Features:** Inventory tracking, smart lists, price comparison
 
-**Strengths:** Reduces food waste and improves budgeting.\
+**Strengths:** Reduces food waste and improves budgeting.
 **Weaknesses:** Limited API access in Australia and manual data entry
 issues.
 
@@ -100,7 +100,7 @@ issues.
 
 **Key Features:** Reverse image search, review sentiment scan
 
-**Strengths:** Protects users from fraudulent listings.\
+**Strengths:** Protects users from fraudulent listings.
 **Weaknesses:** AI reliability and detecting sophisticated fake reviews.
 
 **Target Audience:** Online shoppers
@@ -113,7 +113,7 @@ issues.
 
 **Key Features:** Dead man switch, quick SOS
 
-**Strengths:** Immediate emergency response support.\
+**Strengths:** Immediate emergency response support.
 **Weaknesses:** Background tracking limitations on mobile OS.
 
 **Target Audience:** Parents, women, kids
@@ -136,23 +136,23 @@ instant feedback, making workouts more enjoyable and consistent.
 
 ### ⚙️ Core Features
 
--   Movement tracking using Mediapipe\
--   Game-based workout interactions\
--   User profiles with XP, levels, and streaks\
+-   Movement tracking using Mediapipe
+-   Game-based workout interactions
+-   User profiles with XP, levels, and streaks
 -   Progress tracking and statistics
 
 ### 🌍 Potential Impact
 
-This application aims to: - Help users build consistent fitness habits\
+This application aims to: - Help users build consistent fitness habits
 - Support individuals who rely on gamification and instant rewards
-(e.g., neurodivergent users)\
+(e.g., neurodivergent users)
 - Make exercise more accessible and engaging
 
 ### 🔮 Future Enhancements
 
--   Badges and achievements\
--   Multiplayer / co-op gameplay\
--   Leaderboards\
+-   Badges and achievements
+-   Multiplayer / co-op gameplay
+-   Leaderboards
 -   Expanded game library
 
 ### ⚖️ Constraints
