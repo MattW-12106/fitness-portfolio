@@ -20,5 +20,24 @@ Integrate Mediapipe pose detection into the application and connect user movemen
 
 ---
 
+## Task 2 - Project Scope
+
+**IN-SCOPE**
+
+- Browser-based fitness web application using a webcam for motion tracking
+- Body movement detection using MediaPipe pose tracking
+- One playable mini-game controlled by physical movement (e.g. squats or arm raises)
+- A technical warmup (Check Camera settings)
+- Tracking user exercise level / XP mode
+- User dashboard to show exercise history
+- Light and dark mode user interface
+
+**OUT-SCOPE**
+
+- Native mobile applications for iOS or Android
+- Integration with wearable fitness devices or smartwatches
+- Integration with Fitness tracking app on phone
+- Voice over on certain exercise to encourage user to hit target runs
+
 ## 🧠 Expected Outcome
 By the end of the MVP, the team aims to deliver a working prototype that demonstrates how motion tracking and gamification can be combined to create a more engaging fitness experience. The project will also help the team strengthen skills in frontend development, backend systems, teamwork, and software integration.
