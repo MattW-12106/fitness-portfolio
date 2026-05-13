@@ -41,3 +41,24 @@ Integrate Mediapipe pose detection into the application and connect user movemen
 
 ## 🧠 Expected Outcome
 By the end of the MVP, the team aims to deliver a working prototype that demonstrates how motion tracking and gamification can be combined to create a more engaging fitness experience. The project will also help the team strengthen skills in frontend development, backend systems, teamwork, and software integration.
+
+# A relatively concise Risk Assessment of our Fitness App!!
+
+## Overall Accuracy
+1. Pose Estimation Accuracy: MediaPipe's pose landmark model was trained primarily on general human imagery, not sport/exercise-specific datasets. This means that joint angle miscalculation or subtle errors in landmark placement (e.g., shoulder vs. elbow positioning) can cause the app to approve dangerously poor form (or not a valid form at all).
+2. Occlusion failures: so basically when body parts overlap (e.g., a lunge where the front leg obscures the back knee), landmarks either disappear or are estimated with low confidence, making real-time feedback unreliable.
+3. Edge-case body types: the model performs less consistently on users with non-average proportions, mobility limitations, or who wear loose clothing that obscures body contours.
+
+## Following that we also have the obvious hardware and environmental dependancies/potential issues: 
+1. Lighting:  low light, backlighting, or shadows degrade landmark confidence (ability to recognise what it's looking at) significantly. 
+2. Camera angle and distance: seeming as the model requires a largely unobstructed, reasonably close view; most users probably won't naturally position their phone or device optimally.
+3. Device performance: This one is pretty self-explanatory but older hardware may not be able to keep up a framerate required for mediapipe to accurately analyse what the user is doing.
+
+## Potential Legal Issues!! (YAY!!)
+For this one we have 2 very important points.
+1. Negligence claims: If a user follows our app's feedback and is injured, we could face liability, particularly if the feedback was demonstrably wrong due to a known model limitation.
+2. Mitigations: Strong terms of service, explicit disclaimers ("not a substitute for a qualified trainer"), and consulting a healthcare/legal professional before launch are essential!! Otherwise there may be issues there.
+
+## There are other potential issues too: 
+1. Mediapipe may get updates which can break the API during or after development (unlikely to be within the scope of our development cycle but still something to think about.
+2. Don't monitor or sell any data for people using the app!! (i.e., camera footage, or personaly details of users)
