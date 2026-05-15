@@ -20,6 +20,32 @@ Integrate Mediapipe pose detection into the application and connect user movemen
 
 ---
 
+## Stakeholders and Team Roles
+
+## Purpose
+To document who is involved in or affected by the project and their respective responsibilities.
+
+## Stakeholders
+
+### Internal 
+The Team members are Patrick, Anthonia, Matt and Karen
+
+### External
+- End-users: individuals seeking webcam-based fitness experiences
+- Potential B2B clients: corporate wellness programs with employees expected to seat for a high number of hours, rehabilitation clients involving movements 
+
+## Team Roles 
+| Team Member | Major Role | Minor Role | Responsibilities |
+|---|---|---|---|
+| Karen | Computer Vision / Motion Engineer | Project Manager & Documentation | MediaPipe pose detection, game logic architecture, project coordination |
+| Patrick | Fullstack / Backend Engineer | QA / Testing | Server-side logic, API development, database, quality assurance |
+| Anthonin | Frontend / UI Engineer | DevOps | UI implementation, deployment pipeline, CI/CD |
+| Matt | Game Logic Engineer | UI/UX Designer | Game mechanics, scoring systems, visual design |
+
+> Project Manager responsibilities are shared across all members to ensure equal experience, per team agreement.
+
+---
+
 ## Task 2 - Project Scope
 
 **IN-SCOPE**
@@ -62,3 +88,29 @@ For this one we have 2 very important points.
 ## There are other potential issues too: 
 1. Mediapipe may get updates which can break the API during or after development (unlikely to be within the scope of our development cycle but still something to think about.
 2. Don't monitor or sell any data for people using the app!! (i.e., camera footage, or personaly details of users)
+
+---
+
+## High-Level Plan
+
+## Project Timeline
+
+| Stage | Phase | Status |
+|---|---|---|
+| Stage 1 | Idea Development | Completed |
+| Stage 2 | Project Charter Development | Current |
+| Stage 3 | Technical Documentation | Upcoming |
+| Stage 4 | MVP Development | Upcoming |
+| Stage 5 | Project Closure | Upcoming |
+
+---
+
+## Milestones & Deliverables
+
+- **Week 1-2:** Team formation, idea generation, and role assignment
+- **Week 3-4:** Project Charter creation — stakeholders, scope, risks, and objectives defined
+- **Week 5-6:** Technical documentation finalised — architecture, stack, and API design
+- **Week 7-10:** MVP Development — core game loop, MediaPipe integration, and frontend
+- **Week 11-12:** Final presentation, demo, and project closure
+
+---
