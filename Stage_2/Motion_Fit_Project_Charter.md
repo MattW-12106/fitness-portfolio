@@ -58,7 +58,11 @@ Successfully integrate MediaPipe pose detection into the application to provide 
 | Anthonia | Frontend / UI Engineer | DevOps Support | User interface implementation, deployment workflow, CI/CD |
 | Matt | Game Logic Engineer | UI/UX Design | Gameplay mechanics, scoring systems, visual experience design |
 
-> Project management responsibilities are collaboratively shared among all team members to promote equal participation and leadership experience.
+<br>
+
+> **Note:** Project management responsibilities are collaboratively shared among all team members to encourage equal participation and leadership development.
+
+<br>
 
 ---
 
