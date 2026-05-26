@@ -1,62 +1,10 @@
-# 🏗️ Fitness Motion Game Web App — System Architecture
+# 🏋️ Motion Fit Web App — System Architecture
 
 ## 📌 High-Level System Architecture Diagram
 
 <br>
 
-```mermaid
-flowchart LR
-
-    U[👤 User]
-    D[💻 Browser / Device]
-    N[🌐 Internet]
-
-    subgraph FRONTEND[Frontend Layer]
-        FE[⚛️ Next.js Frontend\nTypeScript + Tailwind]
-        AI[🧠 TensorFlow.js Motion Detection\nBrowser-Based Processing]
-        GAME[🎮 Game Engine\nLocal Game Logic & Scoring]
-    end
-
-    subgraph BACKEND[Backend Layer]
-        API[🟢 Express.js API Server\nAuthentication & Game Services]
-        AUTH[🔐 JWT Authentication]
-        SCORE[🏆 Score & Leaderboard Service]
-    end
-
-    subgraph DATABASE[Database Layer]
-        DB[(🐘 PostgreSQL Database)]
-    end
-
-    subgraph FUTURE[Future Multiplayer Expansion]
-        SOCKET[⚡ Socket.IO Service\nFuture Real-Time Synchronization]
-    end
-
-    %% User Flow
-    U <--> D
-    D <--> N
-    N <--> FE
-
-    %% Frontend Internal Flow
-    FE --> AI
-    AI --> GAME
-
-    %% Frontend ↔ Backend
-    GAME <--> |Scores, Sessions,\nLeaderboard Data| API
-
-    %% Backend Internal Services
-    API --> AUTH
-    API --> SCORE
-
-    %% Database Communication
-    AUTH <--> DB
-    SCORE <--> DB
-
-    %% Future Multiplayer
-    SOCKET -.-> |Future Real-Time Events| FE
-    SOCKET -.-> |Future Multiplayer Sync| API
-```
-
-<br><br>
+![System Architecture Diagram](/system-architecture-diagram.png)
 
 # 🧠 Architecture Overview
 
