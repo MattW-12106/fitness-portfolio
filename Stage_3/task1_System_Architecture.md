@@ -14,7 +14,7 @@ The application follows a modern **client-server architecture** where real-time 
 
 ## ⚛️ Frontend Responsibilities
 
-The frontend is built using **Next.js** and handles:
+The frontend is built using **React.js** and handles:
 
 - 🎥 Webcam access
 - 🧠 Browser-based motion detection using TensorFlow.js
@@ -78,7 +78,7 @@ The application structure is intentionally modular so multiplayer features can b
 
 ## 🧠 2. Motion Detection
 
-TensorFlow.js analyzes movement locally in the browser.
+Media Pipe analyzes movement locally in the browser.
 
 Detected gestures trigger gameplay events.
 
@@ -154,12 +154,12 @@ Socket.IO can later be integrated for:
 
 | Layer | Technology |
 |---|---|
-| ⚛️ Frontend | Next.js + TypeScript |
+| ⚛️ Frontend | React.js + TypeScript |
 | 🎨 Styling | Tailwind CSS |
-| 🧠 Motion Detection | TensorFlow.js |
+| 🧠 Motion Detection | Media Pipe |
 | 🎮 Game Logic | Browser-Based Game Engine |
 | 🟢 Backend | Express.js |
-| 🔐 Authentication | JWT |
+| 🔐 Authentication | JWT | Google Auth
 | 🐘 Database | PostgreSQL |
 | ⚡ Multiplayer (Future) | Socket.IO |
 | 📦 Containerization | Docker |
