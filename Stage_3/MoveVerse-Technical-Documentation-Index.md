@@ -1,4 +1,4 @@
-# 🚀 MoveVerse Technical Documentation
+# MoveVerse Technical Documentation
 
 ## 📖 Overview
 

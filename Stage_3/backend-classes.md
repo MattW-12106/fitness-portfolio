@@ -1,4 +1,4 @@
-# ⚙️ MoveVerse Backend Classes Documentation
+# MoveVerse Backend Classes Documentation
 
 ## 📖 Overview
 
