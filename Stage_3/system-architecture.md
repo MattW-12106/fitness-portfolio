@@ -1,10 +1,10 @@
-# 🏋️ Motion Fit Web App — System Architecture
+# MoveVerse Web App — System Architecture
 
 ## 📌 High-Level System Architecture Diagram
 
 <br>
 
-![System Architecture Diagram](/system-architecture-diagram.png)
+![System Architecture Diagram](./images/system-architecture-diagram.png)
 
 # 🧠 Architecture Overview
 
@@ -56,10 +56,10 @@ Stored data includes:
 
 To support future scalability, the architecture is designed to later integrate **Socket.IO** for:
 
-- 🌐 Real-time multiplayer sessions
-- 📡 Live score synchronization
-- 👥 Player matchmaking
-- 📢 Event broadcasting
+- Real-time multiplayer sessions
+- Live score synchronization
+- Player matchmaking
+- Event broadcasting
 
 The application structure is intentionally modular so multiplayer features can be integrated without major restructuring.
 
@@ -93,11 +93,11 @@ Detected gestures trigger gameplay events.
 
 The game engine processes movement events and handles:
 
-- 🎮 Character actions
-- 🏆 Score calculation
-- ✨ Visual effects
-- 🔊 Sound effects
-- 📊 Gameplay statistics
+- Character actions
+- Score calculation
+- Visual effects
+- Sound effects
+- Gameplay statistics
 
 <br>
 
@@ -117,11 +117,11 @@ Backend services:
 
 PostgreSQL stores persistent application data including:
 
-- 👤 User accounts
-- 🏆 Scores
-- 📈 Leaderboards
-- 🎖️ Achievements
-- 🕹️ Gameplay sessions
+- User accounts
+- Scores
+- Leaderboards
+- Achievements
+- Gameplay sessions
 
 <br>
 
@@ -141,10 +141,10 @@ from the backend API.
 
 Socket.IO can later be integrated for:
 
-- 🌐 Real-time multiplayer gameplay
-- 🏆 Live leaderboard synchronization
-- 👥 Multiplayer rooms and matchmaking
-- 📡 Event broadcasting between players
+- Real-time multiplayer gameplay
+- Live leaderboard synchronization
+- Multiplayer rooms and matchmaking
+- Event broadcasting between players
 
 <br><br>
 
@@ -175,11 +175,9 @@ The architecture is intentionally modular to support future multiplayer features
 
 ### ✅ Key Architectural Decisions
 
-- 🧠 Motion detection is processed client-side to reduce backend computational load.
-- ⚛️ Frontend gameplay logic is separated from backend persistence services.
-- 🔄 Event-driven communication allows future multiplayer synchronization.
-- 📦 Docker containerization ensures consistent development environments.
-- ⚡ Socket.IO can later be integrated without redesigning the existing application structure.
-- 🧩 Modular separation of concerns improves maintainability and scalability.
-
-```
+- Motion detection is processed client-side to reduce backend computational load.
+- Frontend gameplay logic is separated from backend persistence services.
+- Event-driven communication allows future multiplayer synchronization.
+- Docker containerization ensures consistent development environments.
+- Socket.IO can later be integrated without redesigning the existing application structure.
+- Modular separation of concerns improves maintainability and scalability.
