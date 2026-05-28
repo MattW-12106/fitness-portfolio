@@ -1,10 +1,10 @@
-# 🏋️ Motion Fit Web App — System Architecture
+# MoveVerse Web App — System Architecture
 
 ## 📌 High-Level System Architecture Diagram
 
 <br>
 
-![System Architecture Diagram](/system-architecture-diagram.png)
+![System Architecture Diagram](./images/system-architecture-diagram.png)
 
 # 🧠 Architecture Overview
 
