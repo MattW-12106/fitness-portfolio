@@ -53,7 +53,7 @@ Defines the internal structure of the MoveVerse system including backend classes
 ### Documents
 
 #### Frontend
-- [React Components Documentation](./react-components.md)
+- [React Components Documentation](./react-component.md)
 
 #### Backend
 - [Backend Classes Documentation](./backend-classes.md)
