@@ -1,4 +1,5 @@
-# 🔧 MoveVerse SCM Strategy
+
+# MoveVerse SCM Strategy
 
 ## 📖 Purpose
 
@@ -8,10 +9,53 @@ The SCM process establishes:
 
 - Git workflow standards
 - Team collaboration procedures
-- Branch management strategies
+- Repository organization strategies
+- Branch management workflows
 - Pull request workflows
 - Code review processes
 - Version control conventions
+- Continuous Integration workflows
+
+---
+
+# 🗂️ Repository Structure Strategy
+
+MoveVerse follows a multi-repository project structure to separate concerns between frontend development, backend services, and technical documentation.
+
+## Repository Structure
+
+```text
+moveverse-docs
+moveverse-frontend
+moveverse-backend
+```
+
+---
+
+## Repository Purposes
+
+| Repository | Purpose |
+|---|---|
+| `moveverse-docs` | Centralized technical documentation and project planning |
+| `moveverse-frontend` | React frontend application |
+| `moveverse-backend` | Express backend API and PostgreSQL integration |
+
+---
+
+## Central Documentation Repository
+
+The `moveverse-docs` repository serves as the primary project entry point.
+
+This repository contains:
+
+- Technical documentation
+- Architecture diagrams
+- Database design
+- SCM and QA strategies
+- Setup instructions
+- Links to frontend and backend repositories
+
+This structure allows employers, collaborators, and reviewers to understand the complete project architecture from a centralized location.
 
 ---
 
@@ -22,6 +66,7 @@ The SCM process establishes:
 | Git | Distributed version control |
 | GitHub | Repository hosting and collaboration |
 | Docker | Local environment consistency |
+| GitHub Actions | Automated CI validation |
 
 ---
 
@@ -36,7 +81,9 @@ MoveVerse follows a simplified Git Flow workflow.
 | `main` | Stable production-ready code |
 | `dev` | Development integration branch |
 
-### `main` Branch
+---
+
+## `main` Branch
 
 The `main` branch contains:
 
@@ -48,7 +95,7 @@ Direct commits to `main` are prohibited.
 
 ---
 
-### `dev` Branch
+## `dev` Branch
 
 The `dev` branch is used for:
 
@@ -57,13 +104,13 @@ The `dev` branch is used for:
 - Local testing
 - Pre-production validation
 
-All feature branches must be merged into `dev` before deployment.
+All feature branches are merged into `dev` before deployment.
 
 ---
 
 # 🌱 Conventional Branching Strategy
 
-Each feature, fix, or documentation task must use its own branch.
+Each feature, fix, or documentation task uses its own dedicated branch.
 
 ## Branch Naming Format
 
@@ -128,7 +175,7 @@ docs/scm-strategy
 6. Create Pull Request
 7. Conduct code review
 8. Merge into dev
-9. Test integration
+9. Run integration validation
 10. Merge dev into main
 ```
 
@@ -136,7 +183,7 @@ docs/scm-strategy
 
 # 📝 Conventional Commits Strategy
 
-MoveVerse follows Conventional Commits for readable Git history.
+MoveVerse follows Conventional Commits for readable and maintainable Git history.
 
 ## Commit Format
 
@@ -207,7 +254,7 @@ Before merging:
 
 ## Code Review Process
 
-At least one teammate should review every pull request.
+At least one teammate reviews every pull request before merging.
 
 Review focus areas:
 
@@ -223,7 +270,7 @@ Review focus areas:
 
 ## Merge Strategy
 
-Preferred merge method:
+MoveVerse uses:
 
 ```text
 Squash and Merge
@@ -248,7 +295,7 @@ Benefits:
 - Dependency isolation
 - Simplified PostgreSQL setup
 
-Docker is primarily used during:
+Docker is used during:
 
 - Backend execution
 - Database services
@@ -256,41 +303,70 @@ Docker is primarily used during:
 
 ---
 
-# 🚀 Future CI/CD Recommendation
+# ⚙️ Continuous Integration (CI) Strategy
 
-## Recommended Platform
+MoveVerse uses GitHub Actions for automated validation during development.
 
-- GitHub Actions
+GitHub Actions automatically validates:
 
-Why GitHub Actions:
-
-- Integrated directly with GitHub
-- Beginner friendly
-- Free for student projects
-- Supports Node.js and Docker workflows
+- Pull requests
+- Pushes to dev
+- Pushes to main
 
 ---
 
-## Recommended CI Tasks
+## CI Workflow Purpose
 
-| Task | Purpose |
-|---|---|
-| Install dependencies | Validate package installation |
-| Run linting | Detect formatting issues |
-| Run tests | Validate application logic |
-| Build frontend | Ensure production build works |
-| Docker validation | Verify containers function correctly |
+The CI workflow ensures unstable or broken code is detected before merging into shared branches.
+
+Automated validation includes:
+
+- Dependency installation
+- Frontend build validation
+- Backend validation
+- Unit testing
+- Linting
 
 ---
 
-# 🔒 Recommended Repository Protections
+## Initial CI Workflow
 
-Protect the following branches:
+### Frontend Validation
+
+```text
+- npm install
+- npm run build
+```
+
+### Backend Validation
+
+```text
+- npm install
+```
+
+---
+
+## Expanded CI Workflow
+
+As the project grows, the CI pipeline additionally executes:
+
+```text
+- npm run lint
+- npm test
+- integration tests
+- Docker validation
+```
+
+---
+
+# 🔒 Repository Protection Strategy
+
+The following branches are protected:
 
 - `main`
 - `dev`
 
-Recommended GitHub branch rules:
+GitHub branch protection rules include:
 
 - Prevent direct pushes
 - Require pull requests
@@ -301,7 +377,7 @@ Recommended GitHub branch rules:
 
 # 📦 Semantic Versioning Strategy
 
-MoveVerse should follow semantic versioning.
+MoveVerse follows semantic versioning.
 
 ## Version Format
 
@@ -320,3 +396,27 @@ v1.2.3
 | MAJOR | Breaking changes |
 | MINOR | New features |
 | PATCH | Bug fixes |
+
+---
+
+# ✅ Conclusion
+
+The MoveVerse SCM strategy establishes a structured workflow for collaborative development, repository management, testing, validation, and release management.
+
+By implementing:
+
+- Multi-repository architecture
+- Conventional branching
+- Conventional commits
+- Pull request reviews
+- GitHub Actions CI validation
+- Docker-based local environments
+- Protected branch workflows
+
+The MoveVerse team improves:
+
+- Development consistency
+- Collaboration
+- Code maintainability
+- Software reliability
+- Long-term scalability
