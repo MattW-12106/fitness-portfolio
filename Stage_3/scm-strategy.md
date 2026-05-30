@@ -1,4 +1,3 @@
-
 # MoveVerse SCM Strategy
 
 ## 📖 Purpose
