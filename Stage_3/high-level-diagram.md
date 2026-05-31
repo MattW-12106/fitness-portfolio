@@ -23,7 +23,7 @@
     Browser->>Webcam: navigator.mediaDevices.getUserMedia()
     Webcam-->>Browser: Video stream ready
     Browser->>MP: loadModel(pose_landmarker)
-    MP-->>Browser: Model loaded ✓
+    MP-->>Browser: Model loaded
     Browser-->>Player: Show "Start Game" screen
   else Permission denied
     Webcam-->>Browser: Error: NotAllowedError
@@ -77,7 +77,6 @@ sequenceDiagram
   loop Runs every animation frame (~60fps)
     Webcam->>MP: raw video frame
     MP->>GE: detectPose(frame)
-    GE->>GE: classifyMove(landmarks)
 
     alt Valid rep detected
       GE->>Scene: triggerJump(character)
@@ -126,7 +125,6 @@ sequenceDiagram
   API->>Facade: saveSession(dto)
   Facade->>DB: sessions.create(data)
   DB-->>Facade: Session { id, score }
-  Facade->>Facade: awardBadges(userId, sessionId)
   Facade->>DB: leaderboard.upsert(userId, score)
   DB-->>Facade: rank: 3
   Facade-->>API: { sessionId, rank, badges[] }
@@ -156,8 +154,6 @@ sequenceDiagram
 
   alt Valid credentials
     DB-->>Facade: User record
-    Facade->>Facade: verifyHash(plain, hash)
-    Facade->>Facade: issueJWT(userId)
     Facade-->>API: { token, userId }
     API-->>Client: 200 OK { token }
     Client-->>Browser: store token, resolve()

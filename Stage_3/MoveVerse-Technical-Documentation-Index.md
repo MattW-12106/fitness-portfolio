@@ -69,7 +69,7 @@ Defines the internal structure of the MoveVerse system including backend classes
 Illustrates the interaction flow between frontend components, backend APIs, MediaPipe processing, and the PostgreSQL database.
 
 ### Documents
-- [Sequence Diagrams](./sequence-diagrams.md)
+- [Sequence Diagrams](./high-level-diagram.md)
 
 ---
 
@@ -79,7 +79,7 @@ Illustrates the interaction flow between frontend components, backend APIs, Medi
 Defines external APIs, internal REST API endpoints, request formats, response formats, and authentication flows.
 
 ### Documents
-- [API Documentation](./api-specifications.md)
+- [API Documentation](./API-specifications.md)
 
 ---
 
