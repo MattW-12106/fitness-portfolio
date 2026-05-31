@@ -23,7 +23,7 @@
     Browser->>Webcam: navigator.mediaDevices.getUserMedia()
     Webcam-->>Browser: Video stream ready
     Browser->>MP: loadModel(pose_landmarker)
-    MP-->>Browser: Model loaded ✓
+    MP-->>Browser: Model loaded
     Browser-->>Player: Show "Start Game" screen
   else Permission denied
     Webcam-->>Browser: Error: NotAllowedError
