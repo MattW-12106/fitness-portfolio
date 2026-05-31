@@ -77,7 +77,6 @@ sequenceDiagram
   loop Runs every animation frame (~60fps)
     Webcam->>MP: raw video frame
     MP->>GE: detectPose(frame)
-    GE->>GE: classifyMove(landmarks)
 
     alt Valid rep detected
       GE->>Scene: triggerJump(character)
