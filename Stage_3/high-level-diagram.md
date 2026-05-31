@@ -126,7 +126,6 @@ sequenceDiagram
   API->>Facade: saveSession(dto)
   Facade->>DB: sessions.create(data)
   DB-->>Facade: Session { id, score }
-  Facade->>Facade: awardBadges(userId, sessionId)
   Facade->>DB: leaderboard.upsert(userId, score)
   DB-->>Facade: rank: 3
   Facade-->>API: { sessionId, rank, badges[] }
