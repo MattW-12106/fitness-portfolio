@@ -79,7 +79,7 @@ Illustrates the interaction flow between frontend components, backend APIs, Medi
 Defines external APIs, internal REST API endpoints, request formats, response formats, and authentication flows.
 
 ### Documents
-- [API Documentation](./api-specifications.md)
+- [API Documentation](./API-specifications.md)
 
 ---
 
