@@ -30,8 +30,8 @@ The purpose of this documentation is to provide a structured technical blueprint
 Contains prioritized user stories, UI planning, and application mockups.
 
 ### Documents
-- [User Stories](./user-stories.md)
-- [Mockups](./mockups.md)
+- [User Stories](./user_stories.md)
+- [Mockups](./mockup_documentation.md)
 
 ---
 
