@@ -156,8 +156,6 @@ sequenceDiagram
 
   alt Valid credentials
     DB-->>Facade: User record
-    Facade->>Facade: verifyHash(plain, hash)
-    Facade->>Facade: issueJWT(userId)
     Facade-->>API: { token, userId }
     API-->>Client: 200 OK { token }
     Client-->>Browser: store token, resolve()
